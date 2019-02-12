@@ -5,7 +5,7 @@ test: clean lint
 	@py.test test/ --cov app.py -s
 
 lint:
-	@flake8 .
+	@flake8 test/
 
 clean:
 	@find . -type f -name '*.pyc' -delete
