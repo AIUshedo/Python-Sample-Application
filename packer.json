@@ -30,7 +30,7 @@
   "provisioners": [
     {
       "type": "chef-solo",
-      "cookbook_paths": ["../../python-cookbook", "../../nginx-cookbook"],
+      "cookbook_paths": ["../python-cookbook", "../nginx-cookbook"],
       "run_list":["nginx::default", "pip::default"]
     }
   ]
