@@ -6,9 +6,8 @@
   },
   "builders": [{
     "type": "amazon-ebs",
-    "subnet_id": "subnet-07fcbbc1b452410f1",
+    "subnet_id": "subnet-0e9b6138ff1ce18f2",
     "ssh_keypair_name": "DevOpsStudents",
-    "security_group_id": "sg-0488ba1d352765f92",
     "ssh_agent_auth": true,
     "associate_public_ip_address": true,
     "access_key": "{{user `aws_access_key`}}",
