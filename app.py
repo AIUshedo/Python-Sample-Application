@@ -9,7 +9,7 @@ from flask_sslify import SSLify
 from rauth import OAuth2Service
 import requests
 
-app = Flask(__name__, static_folder='static', static_url_path='')
+app = Flask(__name__, static_folder='static', static_url_path='/')
 app.requests_session = requests.Session()
 app.secret_key = os.urandom(24)
 
@@ -230,4 +230,4 @@ def get_redirect_uri(request):
 
 if __name__ == '__main__':
     app.debug = os.environ.get('FLASK_DEBUG', True)
-    app.run(port=7000, host='0.0.0.0')
+    app.run(port=7000, host='192.168.10.150')
