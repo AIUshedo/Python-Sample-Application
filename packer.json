@@ -31,6 +31,15 @@
       "type": "chef-solo",
       "cookbook_paths": ["./cookbooks"],
       "run_list":["python::default", "uber_nginx_cookbook::default"]
+    },
+    {
+      "type": "shell",
+      "inline": ["mkdir /home/ubuntu/Python-Sample-Application"]
+    },
+    {
+      "type": "file",
+      "source": "./",
+      "destination": "home/ubuntu/Python-Sample-Application"
     }
   ]
 }
