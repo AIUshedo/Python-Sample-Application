@@ -30,7 +30,7 @@
     {
       "type": "chef-solo",
       "cookbook_paths": ["../python-cookbook", "../nginx-cookbook"],
-      "run_list":["nginx::default", "pip::default"]
+      "run_list":["nginx-cookbook::default", "python-cookbook::default"]
     }
   ]
 }
