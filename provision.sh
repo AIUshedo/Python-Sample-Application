@@ -7,6 +7,6 @@ sudo apt-get install libncurses5-dev -y
 pip install -r /Python-Sample-Application/requirements.txt
 
 sudo chmod 777 -R /usr/local/lib
-make bootstrap
-sudo chmod 777 -R /usr/local/lib
+
+cd /Python-Sample-Application
 make bootstrap

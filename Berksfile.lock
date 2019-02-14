@@ -1,0 +1,14 @@
+DEPENDENCIES
+  python
+    git: git@github.com:AIUshedo/python-cookbook.git
+    revision: c2d83903b09c32c376de52cdb74638cf2ea3db83
+  uber_nginx_cookbook
+    git: git@github.com:AIUshedo/nginx-cookbook.git
+    revision: ab0b69600f00bb23a95c99f3c3a756018d3d1f5d
+
+GRAPH
+  apt (7.1.1)
+  python (0.1.0)
+    apt (>= 0.0.0)
+  uber_nginx_cookbook (0.1.0)
+    apt (>= 0.0.0)
